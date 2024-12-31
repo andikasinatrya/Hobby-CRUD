@@ -13,7 +13,7 @@
         <table class="min-w-full bg-white border border-gray-300 rounded-lg">
             <thead>
                 <tr class="bg-blue-600 text-white">
-                    <th class="py-2 px-4 text-left">#</th>
+                    <th class="py-2 px-4 text-left">ID</th>
                     <th class="py-2 px-4 text-left">Hobby Name</th>
                     <th class="py-2 px-4 text-center">Actions</th>
                 </tr>
