@@ -2,8 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HobbyController;
+use App\Http\Controllers\StudentController;
 
-Route::get('/', [HobbyController::class, 'index'])->name('hobbies.index');
+// // Default route akan redirect ke /hobbies
+// Route::get('/', function () {
+//     return redirect('/hobbies');
+// });
 
-Route::resource('hobbies', HobbyController::class)->except(['index']);
+Route::resource('hobbies', HobbyController::class);
+Route::resource('students', StudentController::class);
 
