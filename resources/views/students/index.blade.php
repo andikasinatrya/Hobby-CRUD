@@ -15,7 +15,6 @@
                 <tr class="bg-blue-600 text-white">
                     <th class="py-2 px-4 text-left">NISN</th>
                     <th class="py-2 px-4 text-left">Student Name</th>
-                    <th class="py-2 px-4 text-left">Hobby</th>
                     <th class="py-2 px-4 text-center">Actions</th>
                 </tr>
             </thead>
