@@ -2,6 +2,15 @@
 
 @section('content')
 <div class="container mx-auto p-6">
+    <div class="mb-4 text-right">
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
+                Logout
+            </button>
+        </form>
+    </div>
+
     <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Data Siswa</h1>
 
     <div id="flash-messages" class="mb-4">
@@ -38,7 +47,6 @@
                         @endforeach
                     </td>
                     <td class="py-3 px-6 text-center space-x-2">
-                        <a href="{{ route('siswas.show', $item->id) }}" class="text-yellow-600 hover:text-yellow-700 font-semibold">Detail</a>
                         <a href="{{ route('siswas.edit', $item->id) }}" class="text-green-600 hover:text-green-700 font-semibold">Edit</a>
                         <form action="{{ route('siswas.destroy', $item->id) }}" method="POST" class="inline-block">
                             @csrf
